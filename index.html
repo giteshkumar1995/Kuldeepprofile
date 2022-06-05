@@ -32,6 +32,15 @@
 						<li><a href="#Portfolio">Portfolio</a></li>
 						<li><a href="#Contact">Contact</a></li>
 					</ul>
+                                        <script>
+						$('.navbar-collapse ul li a').click(function() {
+								$('.navbar-toggle:visible').click();
+								});
+							</script>
+							<script>$(document).on('click','.navbar-collapse.in',function(e) {
+							if( $(menu-nav.target).is('a') && ( $(menu-nav.target).attr('nav navbar-nav') != 'dropdown-toggle' ) ) {
+							$(this).collapse('hide');
+							}});</script>
 				</div>
 			</div>
 
